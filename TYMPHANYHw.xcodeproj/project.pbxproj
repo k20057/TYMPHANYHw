@@ -13,6 +13,8 @@
 		A75D26FA27B744D1003C4284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75D26F827B744D1003C4284 /* Main.storyboard */; };
 		A75D26FC27B744D5003C4284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75D26FB27B744D5003C4284 /* Assets.xcassets */; };
 		A75D26FF27B744D5003C4284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75D26FD27B744D5003C4284 /* LaunchScreen.storyboard */; };
+		A75D270727B79E4B003C4284 /* BleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75D270627B79E4B003C4284 /* BleService.swift */; };
+		A75D270927B79EA4003C4284 /* BleCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75D270827B79EA4003C4284 /* BleCharacteristic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A75D26FB27B744D5003C4284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75D26FE27B744D5003C4284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75D270027B744D5003C4284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A75D270627B79E4B003C4284 /* BleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleService.swift; sourceTree = "<group>"; };
+		A75D270827B79EA4003C4284 /* BleCharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleCharacteristic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				A75D26F227B744D1003C4284 /* AppDelegate.swift */,
 				A75D26F427B744D1003C4284 /* SceneDelegate.swift */,
+				A75D270627B79E4B003C4284 /* BleService.swift */,
+				A75D270827B79EA4003C4284 /* BleCharacteristic.swift */,
 				A75D26F627B744D1003C4284 /* ViewController.swift */,
 				A75D26F827B744D1003C4284 /* Main.storyboard */,
 				A75D26FB27B744D5003C4284 /* Assets.xcassets */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75D270927B79EA4003C4284 /* BleCharacteristic.swift in Sources */,
 				A75D26F727B744D1003C4284 /* ViewController.swift in Sources */,
 				A75D26F327B744D1003C4284 /* AppDelegate.swift in Sources */,
 				A75D26F527B744D1003C4284 /* SceneDelegate.swift in Sources */,
+				A75D270727B79E4B003C4284 /* BleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +300,14 @@
 				DEVELOPMENT_TEAM = 76M7UHN28B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TYMPHANYHw/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,11 +331,14 @@
 				DEVELOPMENT_TEAM = 76M7UHN28B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TYMPHANYHw/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
